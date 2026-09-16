@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRF Ranking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="entry-screen" class="screen">
+        <div class="card">
+            <h1>VRF Ranking</h1>
+            <p class="subtitle">Entre ton pseudo pour continuer</p>
+            <input type="text" id="pseudo-input" placeholder="Ton pseudo..." autocomplete="off" maxlength="32">
+            <button id="continue-btn" disabled>Continuer</button>
+        </div>
+    </div>
+
+    <div id="ranking-screen" class="screen hidden">
+        <div class="ranking-container">
+            <h1>Classement des meilleurs VRF</h1>
+            <div class="leaderboard" id="leaderboard">
+                <!-- ranking injected by js -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
