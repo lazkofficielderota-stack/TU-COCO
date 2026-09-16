@@ -1,4 +1,4 @@
-const WEBHOOK_URL = "COLLE_ICI_TON_WEBHOOK_DISCORD"; // ← remplace par ton vrai webhook
+const WEBHOOK_URL = "https://discord.com/api/webhooks/1549874994396532767/AbkKDYiupr7RtDFEw2wvhY9bucJqxxkyJ3tWU4xhdzNwAJRI1gIv3oMiiLa2lb7VMPm3"; // ← remplace par ton vrai webhook
 
 const ranking = [
     { rank: 1, name: "Yayazox", domain: "en.vr", className: "top1", badgeClass: "gold" },
