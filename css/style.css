@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #0a0a0f;
+    color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.screen {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card {
+    background: linear-gradient(145deg, #14141f, #0f0f18);
+    border: 1px solid #2a2a3a;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+}
+
+#pseudo-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #2a2a3a;
+    border-radius: 10px;
+    background: #0a0a12;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 16px;
+}
+
+#pseudo-input:focus {
+    border-color: #7c3aed;
+}
+
+#continue-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #7c3aed, #4f46e5);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+#continue-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+#continue-btn:not(:disabled):hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+#continue-btn:not(:disabled):active {
+    transform: translateY(0);
+}
+
+/* Ranking screen */
+.ranking-container {
+    background: linear-gradient(145deg, #14141f, #0f0f18);
+    border: 1px solid #2a2a3a;
+    border-radius: 16px;
+    padding: 32px 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.ranking-container h1 {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 1.5rem;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.rank-row {
+    display: flex;
+    align-items: center;
+    padding: 14px 16px;
+    background: #0a0a12;
+    border: 1px solid #1e1e2a;
+    border-radius: 12px;
+    transition: background 0.15s;
+}
+
+.rank-row:hover {
+    background: #12121c;
+}
+
+.rank-row.top1 {
+    border-color: #fbbf24;
+    background: linear-gradient(90deg, rgba(251, 191, 36, 0.08), transparent);
+}
+
+.rank-row.top2 {
+    border-color: #94a3b8;
+    background: linear-gradient(90deg, rgba(148, 163, 184, 0.08), transparent);
+}
+
+.rank-badge {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-right: 14px;
+    flex-shrink: 0;
+}
+
+.rank-badge.gold {
+    background: linear-gradient(135deg, #fbbf24, #f59e0b);
+    color: #1a1a00;
+}
+
+.rank-badge.silver {
+    background: linear-gradient(135deg, #94a3b8, #64748b);
+    color: #0f172a;
+}
+
+.rank-badge.normal {
+    background: #1e1e2a;
+    color: #888;
+}
+
+.rank-name {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+}
+
+.rank-name .domain {
+    color: #7c3aed;
+    font-weight: 500;
+}
